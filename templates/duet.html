@@ -1,0 +1,163 @@
+{% extends "base.html" %} {% block title %}Artist{% endblock %} {% block
+content %}
+<style>
+  body{
+  background: light-gray 50% / cover no-repeat ;
+  background-image: linear-gradient(0deg, rgba(0.50, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.50) 100%),url(../static/css/img/artistbackground.jpeg);
+  background-size: cover;
+
+  background-position: 50% 50%;
+  background-color: var(--collection-1-bg-primary);
+  }
+</style>
+<html>
+  <head>
+
+    <link rel="stylesheet" href="/static/css/duet.css" />
+  </head>
+  <body>
+    <div class="property-default">
+      <div class="component">
+        <div class="frame">
+          <img class="rectangle" src="/static/css/img/rectangle-18-2.png" />
+          <div class="text-wrapper">BAND</div>
+        </div>
+        <div class="div">
+          <img class="img" src="/static/css/img/rectangle-18.png" />
+          <div class="text-wrapper-2">SOLO</div>
+        </div>
+        <div class="frame-2">
+          <img class="rectangle-2" src="/static/css/img/duet.png" />
+          <div class="text-wrapper-3">DUET</div>
+        </div>
+      </div>
+      <a href="/artistsSolo">
+      <img class="icon-arrow-ios-back" src="/static/css/img/icon-arrow-ios-back-2.png" />
+    </a>
+      <div class="frame-3">
+        <div class="group">
+          <div class="overlap-group">
+            <img class="rectangle-3" src="/static/css/img/rectangle-13-28.png" />
+            <div class="text-wrapper-4">Harmony &amp; Echo</div>
+            <p class="p">Electric melodies that ignite your soul and move your feet.</p>
+            <div class="text-wrapper-5">Rs 30000/-</div>
+          </div>
+        </div>
+        <div class="group">
+          <div class="overlap-group">
+            <img class="rectangle-3" src="/static/css/img/rectangle-13-26.png" />
+            <div class="text-wrapper-6">Acoustic Blend</div>
+            <p class="p">Electric melodies that ignite your soul and move your feet.</p>
+            <div class="text-wrapper-5">Rs 27000/-</div>
+          </div>
+        </div>
+        <div class="overlap-wrapper">
+          <div class="overlap-group">
+            <img class="rectangle-3" src="/static/css/img/rectangle-13-24.png" />
+            <div class="text-wrapper-7">Moonlit Melodies</div>
+            <div class="text-wrapper-5">Rs 31000/-</div>
+            <p class="p">Electric melodies that ignite your soul and move your feet.</p>
+          </div>
+        </div>
+        <div class="group">
+          <div class="overlap-group">
+            <img class="rectangle-3" src="/static/css/img/rectangle-13-22.png" />
+            <div class="text-wrapper-4">Radiant Duets</div>
+            <p class="p">Electric melodies that ignite your soul and move your feet.</p>
+            <div class="text-wrapper-5">Rs 25000/-</div>
+          </div>
+        </div>
+        <div class="group">
+          <div class="overlap-group">
+            <img class="rectangle-3" src="/static/css/img/rectangle-13-20.png" />
+            <div class="text-wrapper-8">Harmony Junction</div>
+            <p class="p">Electric melodies that ignite your soul and move your feet.</p>
+            <div class="text-wrapper-5">Rs 40000/-</div>
+          </div>
+        </div>
+        <div class="overlap-wrapper">
+          <div class="overlap-group">
+            <img class="rectangle-3" src="/static/css/img/rectangle-13-18.png" />
+            <div class="text-wrapper-9">Twin Notes</div>
+            <div class="text-wrapper-5">Rs 26000/-</div>
+            <p class="p">Electric melodies that ignite your soul and move your feet.</p>
+          </div>
+        </div>
+        <div class="group">
+          <div class="overlap-group">
+            <img class="rectangle-3" src="/static/css/img/rectangle-13-16.png" />
+            <div class="text-wrapper-4">Enchanted Echoes</div>
+            <p class="p">Electric melodies that ignite your soul and move your feet.</p>
+            <div class="text-wrapper-5">Rs 20000/-</div>
+          </div>
+        </div>
+        <div class="group">
+          <div class="overlap-group">
+            <img class="rectangle-3" src="/static/css/img/rectangle-13-14.png" />
+            <div class="melody-rhythm">Melody &amp; Rhythm</div>
+            <p class="p">Electric melodies that ignite your soul and move your feet.</p>
+            <div class="text-wrapper-5">Rs 34000/-</div>
+          </div>
+        </div>
+        <div class="overlap-wrapper">
+          <div class="overlap-group">
+            <img class="rectangle-3" src="/static/css/img/rectangle-13-12.png" />
+            <div class="text-wrapper-6">Serenade Duo</div>
+            <div class="text-wrapper-5">Rs 28000/-</div>
+            <p class="p">Electric melodies that ignite your soul and move your feet.</p>
+          </div>
+        </div>
+        <div class="group">
+          <div class="overlap-group">
+            <img class="rectangle-3" src="/static/css/img/rectangle-13-10.png" />
+            <div class="text-wrapper-4">Electric Eclipse</div>
+            <p class="p">Electric melodies that ignite your soul and move your feet.</p>
+            <div class="text-wrapper-5">Rs 65000/-</div>
+          </div>
+        </div>
+        <div class="group">
+          <div class="overlap-group">
+            <img class="rectangle-3" src="/static/css/img/rectangle-13-8.png" />
+            <div class="text-wrapper-6">Midnight Mirage</div>
+            <p class="p">Electric melodies that ignite your soul and move your feet.</p>
+            <div class="text-wrapper-5">Rs 50000/-</div>
+          </div>
+        </div>
+        <div class="overlap-wrapper">
+          <div class="overlap-group">
+            <img class="rectangle-3" src="/static/css/img/rectangle-13-6.png" />
+            <div class="text-wrapper-9">Echoes of Euphoria</div>
+            <div class="text-wrapper-5">Rs 70000/-</div>
+            <p class="p">Electric melodies that ignite your soul and move your feet.</p>
+          </div>
+        </div>
+        <div class="group">
+          <div class="overlap-group">
+            <img class="rectangle-3" src="/static/css/img/rectangle-13-4.png" />
+            <div class="text-wrapper-4">Lunar Pulse</div>
+            <p class="p">Electric melodies that ignite your soul and move your feet.</p>
+            <div class="text-wrapper-5">Rs 56000/-</div>
+          </div>
+        </div>
+        <div class="group">
+          <div class="overlap-group">
+            <img class="rectangle-3" src="/static/css/img/rectangle-13-2.png" />
+            <div class="text-wrapper-6">Whiskey Tango</div>
+            <p class="p">Electric melodies that ignite your soul and move your feet.</p>
+            <div class="text-wrapper-5">Rs 50000/-</div>
+          </div>
+        </div>
+        <div class="overlap-wrapper">
+          <div class="overlap-group">
+            <img class="rectangle-3" src="/static/css/img/rectangle-13.png" />
+            <div class="text-wrapper-6">Radiant Nebula</div>
+            <div class="text-wrapper-5">Rs 37000/-</div>
+            <p class="p">Electric melodies that ignite your soul and move your feet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+{% endblock %}

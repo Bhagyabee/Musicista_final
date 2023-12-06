@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../static/css/styleguidebase.css" />
+    <style>
+body{
+
+   background: linear-gradient(180deg, #E9D8C9 0%, #FDFAF7 87%, rgba(248.84, 233.20, 218.77, 0) 100%);
+        boxShadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+        background-image: linear-gradient(0deg, rgba(0.50, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.50) 100%),url(../static/css/img/rectangle-288.jpeg);
+         background-size: cover;
+          background-repeat: no-repeat;
+         color: var(--text-color, #FFF);
+font-family: Javanese Text;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+    .booking-pop-up {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+input{
+
+background : transparent ;
+border:none;
+outline:none;
+border-bottom: 1px solid white;
+}
+
+.booking-pop-up .div {
+
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 644px;
+  height: 746px;
+  position: relative;
+}
+
+.booking-pop-up .overlap {
+  position: absolute;
+  width: 644px;
+  height: 324px;
+  top: 0;
+  left: 0;
+}
+
+.booking-pop-up .rectangle {
+  position: absolute;
+  width: 644px;
+  height: 290px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.booking-pop-up .text-wrapper {
+  position: absolute;
+  height: 49px;
+  top: -35px;
+  left: 241px;
+  transform: rotate(0.4deg);
+  font-family: "Italiana-Regular", Helvetica;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 49px;
+  white-space: nowrap;
+}
+
+.booking-pop-up .group {
+  position: absolute;
+  width: 381px;
+  height: 45px;
+  top: 211px;
+  left: 126px;
+}
+
+.booking-pop-up .text-wrapper-2 {
+  position: absolute;
+  width: 84px;
+  top: 0;
+  left: 0;
+  font-family: "Javanese Text-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--collection-1-text-color);
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.booking-pop-up .overlap-group {
+  position: absolute;
+  width: 245px;
+  height: 45px;
+  top: 0;
+  left: 132px;
+}
+
+.booking-pop-up .line {
+  width: 234px;
+  top: 44px;
+  left: 0;
+  position: absolute;
+  height: 1px;
+  object-fit: cover;
+}
+
+.booking-pop-up .p {
+  position: absolute;
+  width: 242px;
+  top: 0;
+  left: 3px;
+  font-family: "Javanese Text-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--collection-1-text-secondary);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.booking-pop-up .group-2 {
+  position: absolute;
+  width: 381px;
+  height: 36px;
+  top: 288px;
+  left: 126px;
+}
+
+.booking-pop-up .text-wrapper-3 {
+  position: absolute;
+  width: 117px;
+  top: 0;
+  left: 0;
+  font-family: "Javanese Text-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--collection-1-text-color);
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.booking-pop-up .img {
+  width: 234px;
+  top: 35px;
+  left: 132px;
+  position: absolute;
+  height: 1px;
+  object-fit: cover;
+}
+
+.booking-pop-up .text-wrapper-4 {
+  position: absolute;
+  width: 242px;
+  top: 0;
+  left: 135px;
+  font-family: "Javanese Text-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--collection-1-text-secondary);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.booking-pop-up .text-wrapper-5 {
+  position: absolute;
+  width: 109px;
+  top: 74px;
+  left: 126px;
+  font-family: "Javanese Text-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--collection-1-text-color);
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.booking-pop-up .vector-wrapper {
+  position: absolute;
+  width: 57px;
+  height: 37px;
+  top: 24px;
+  left: 271px;
+  background-color: #ffffff;
+}
+
+.booking-pop-up .vector {
+  position: absolute;
+  width: 30px;
+  height: 22px;
+  top: 7px;
+  left: 15px;
+}
+
+.booking-pop-up .rectangle-2 {
+  position: absolute;
+  width: 57px;
+  height: 37px;
+  top: 24px;
+  left: 346px;
+  background-color: #fff9f9;
+}
+
+.booking-pop-up .text-wrapper-6 {
+  position: absolute;
+  width: 38px;
+  top: 75px;
+  left: 281px;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: #a5a2a2;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.booking-pop-up .text-wrapper-7 {
+  position: absolute;
+  width: 42px;
+  top: 75px;
+  left: 363px;
+  font-family: "Inter-Medium", Helvetica;
+  font-weight: 500;
+  color: #a5a2a2;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.booking-pop-up .group-3 {
+  position: absolute;
+  width: 378px;
+  height: 36px;
+  top: 523px;
+  left: 126px;
+}
+
+.booking-pop-up .text-wrapper-8 {
+  width: 94px;
+  top: 0;
+  left: 0;
+  font-family: "Javanese Text-Regular", Helvetica;
+  color: var(--collection-1-text-color);
+  font-size: 22px;
+  position: absolute;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.booking-pop-up .text-wrapper-9 {
+  position: absolute;
+  width: 242px;
+  top: 3px;
+  left: 132px;
+  font-family: "Javanese Text-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--collection-1-text-secondary);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.booking-pop-up .text-wrapper-10 {
+  height: 18px;
+  top: 420px;
+  left: 271px;
+  font-family: "Inter-Italic", Helvetica;
+  font-style: italic;
+  color: var(--collection-1-text-secondary);
+  font-size: 15px;
+  white-space: nowrap;
+  position: absolute;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.booking-pop-up .group-4 {
+  position: absolute;
+  width: 378px;
+  height: 33px;
+  top: 446px;
+  left: 126px;
+}
+
+.booking-pop-up .line-2 {
+  width: 234px;
+  top: 32px;
+  left: 132px;
+  position: absolute;
+  height: 1px;
+  object-fit: cover;
+}
+
+.booking-pop-up .text-wrapper-11 {
+  position: absolute;
+  width: 242px;
+  top: 1px;
+  left: 132px;
+  font-family: "Javanese Text-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--collection-1-text-secondary);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.booking-pop-up .line-3 {
+  width: 92px;
+  top: 441px;
+  left: 271px;
+  position: absolute;
+  height: 1px;
+  object-fit: cover;
+}
+
+.booking-pop-up .text-wrapper-12 {
+  position: absolute;
+  height: 18px;
+  top: 420px;
+  left: 425px;
+  font-family: "Inter-Italic", Helvetica;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--collection-1-text-secondary);
+  font-size: 15px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.booking-pop-up .line-4 {
+  width: 92px;
+  top: 441px;
+  left: 425px;
+  position: absolute;
+  height: 1px;
+  object-fit: cover;
+}
+
+.booking-pop-up .group-5 {
+  position: absolute;
+  width: 378px;
+  height: 45px;
+  top: 360px;
+  left: 126px;
+}
+
+.booking-pop-up .text-wrapper-13 {
+  position: absolute;
+  width: 94px;
+  top: 5px;
+  left: 0;
+  font-family: "Javanese Text-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--collection-1-text-color);
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.booking-pop-up .line-5 {
+  width: 234px;
+  top: 44px;
+  left: 124px;
+  position: absolute;
+  height: 1px;
+  object-fit: cover;
+}
+
+.booking-pop-up .text-wrapper-14 {
+  position: absolute;
+  width: 242px;
+  top: 0;
+  left: 132px;
+  font-family: "Javanese Text-Regular", Helvetica;
+  font-weight: 400;
+  color: var(--collection-1-text-secondary);
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.booking-pop-up .overlap-wrapper {
+  position: absolute;
+  width: 222px;
+  height: 45px;
+  top: 643px;
+  left: 205px;
+}
+
+.booking-pop-up .div-wrapper {
+  position: relative;
+  width: 220px;
+  height: 45px;
+  border-radius: 40px;
+  border: 1px solid;
+  border-color: var(--collection-1-strokes);
+  background: linear-gradient(180deg, rgba(212, 142, 39, 0.71) 76.04%, rgb(212, 142, 39) 100%);
+}
+
+.booking-pop-up .text-wrapper-15 {
+  position: absolute;
+  width: 135px;
+  height: 32px;
+  top: 5px;
+  left: 41px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.form-inline input{
+    color :var(--collection-1-text-secondary);
+}
+.datetime-container {
+  margin-top: 130px; /* Add some space between the Live Demo section and the datetime container */
+  display: flex;
+  align-items: center;
+  margin-left: 263px;
+}
+
+.datetime-container label {
+  margin-right: 10px; /* Add some space between the labels and input fields */
+  font-size: 18px;
+}
+
+.datetime-container input {
+  width: 150px; /* Adjust the width of the input fields as needed */
+  padding: 8px; /* Add some padding to the input fields */
+  font-size: 16px; /* Adjust the font size as needed */
+  border: 1px solid #ccc; /* Add a border for visual separation */
+  border-radius: 4px; /* Add some border-radius for rounded corners */
+  margin-bottom: 10px; /* Add some space between the input fields */
+}
+.datetime-container input[type="date"],
+.datetime-container input[type="time"] {
+  border: none; /* Remove the border */
+  outline: none; /* Remove the outline */
+  background-color: transparent; /* Make the background transparent */
+  /* Add any additional styling as needed */
+}
+.booking-pop-up .vector-wrapper,
+.booking-pop-up .rectangle-2 {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    border: none; /* Remove border */
+  outline: none; /* Remove outline */
+}
+
+.booking-pop-up input[type="checkbox"] {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+    border: none; /* Remove border */
+  outline: none; /* Remove outline */
+}
+
+.booking-pop-up input[type="checkbox"] + label {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  left:-11px;
+}
+
+.booking-pop-up input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+    border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  width: 12px; /* Adjust the size of the checkbox */
+  height: 12px; /* Adjust the size of the checkbox */
+  background-color: transparent;
+  border-radius: 4px; /* Optional: Add some border-radius for rounded corners */
+}
+
+.booking-pop-up input[type="checkbox"]:checked + label:before {
+  background-color:blue; /* Change the background color when checked */
+}
+
+
+
+</style>
+
+    <title>{% block title %}BOOK{% endblock %}</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark " style="color: #0005">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-nav">
+
+           {% if user.is_authenticated %}
+          <a class="nav-item nav-link" id="home" href="/landing">Home</a>
+
+          <a class="nav-item nav-link" id="artist" href="/artists">Artists</a>
+          <a class="nav-item nav-link" id="contact" href="/contact">Contact</a>
+          <a class="nav-item nav-link" id="book" href="/book">Book-Now</a>
+          <a class="nav-item nav-link" id="logout" href="/logout">Logout</a>
+
+          {% else %}
+          <a class="nav-item nav-link" id="login" href="/login">Login</a>
+          <a class="nav-item nav-link" id="signUp" href="/sign-up">Sign Up</a>
+          {% endif %}
+        </div>
+      </div>
+    </nav>
+
+    <div class="booking-pop-up">
+      <div class="div">
+        <div class="overlap">
+
+          <div class="text-wrapper">Book Now</div>
+          <form class="form-inline"  action='/book-now' method="POST"> <!-- Added form element -->
+            <div class="group">
+              <div class="text-wrapper-2 ">Location</div>
+              <div class="overlap-group">
+                <img class="line" src="img/line-96.svg" />
+                <input class ="p" type="text" name="event_name" value="143, Green Avenue, Amritsar, Punjab" />
+
+              </div>
+            </div>
+            <div class="group-2">
+              <div class="text-wrapper-3">Artist</div>
+              <img class="img" src="img/line-97.svg" />
+              <div class="text-wrapper-4">
+                <input type="tel" name="phone" value="Artist Name" /> <!-- Added input field -->
+              </div>
+            </div>
+
+
+
+            <div class="group-3">
+              <div class="text-wrapper-8 ">Date</div>
+              <img class="img" src="img/line-99.svg" />
+              <div class="text-wrapper-9">
+                <input type="date" name="event_date" value="2023-10-12" /> <!-- Added input field -->
+              </div>
+            </div>
+
+            <div class="group-4">
+              <div class="text-wrapper-8">Time</div>
+              <img class="line-2" src="img/line-100.svg" />
+              <div class="text-wrapper-11">
+                <input type="time" name="event_time" value="16:00" /> <!-- Added input field -->
+              </div>
+            </div>
+
+            <img class="line-4" src="img/line-102.svg" />
+            <div class="group-5">
+              <div class="text-wrapper-13 ">Event</div>
+              <img class="line-5" src="img/line-98.svg" />
+              <div class="text-wrapper-14">
+                <input type="text" name="event_name" value="Wedding Anniversary Party" /> <!-- Added input field -->
+              </div>
+            </div>
+            <div class="overlap-wrapper">
+              <div class="div-wrapper">
+                  <div class="text-wrapper-15" > <a href="/book-now" id="buy_now_btn" ><input style="border-bottom:none " type="submit" value="PAYMENT" /></a></div>
+<!--                <button type="submit" class="text-wrapper-15">PAYMENT</button>-->
+
+              </div>
+            </div>
+            <div class="text-wrapper-5">Live Demo</div>
+        <div class="vector-wrapper text-wrapper-6"><input type="checkbox" id="liveDemo" name="liveDemo" value="yes"><label for="yes">Yes</label></div>
+        <div class="rectangle-2 text-wrapper-7" ><input type="checkbox" id="yes" name="yes" value="yes"><label for="no">No</label></div>
+
+
+        <div class="datetime-container">
+            <label for="eventDate">Date:</label>
+            <input type="date" id="eventDate" name="eventDate">
+            <label for="eventTime">Time:</label>
+            <input type="time" id="eventTime" name="eventTime">
+        </div>
+<!--            <div class="group-6">-->
+<!--             <label for="liveDemo">Live Demo:</label>-->
+<!--        <input type="checkbox" id="liveDemo" name="liveDemo" value="yes">-->
+<!--        <label for="yes">Yes</label>-->
+<!--        <input type="checkbox" id="yes" name="yes" value="yes">-->
+<!--        <label for="no">No</label>-->
+<!--              </div>-->
+             <!-- Added submit button -->
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+</html>

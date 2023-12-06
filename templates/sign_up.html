@@ -1,0 +1,140 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block
+content %}
+<style>
+   body > nav{
+       background-color: #0005!important;
+   }
+
+  body{
+        background: linear-gradient(180deg, #E9D8C9 0%, #FDFAF7 87%, rgba(248.84, 233.20, 218.77, 0) 100%);
+        boxShadow: 4px 4px 4px rgba(0, 0, 0, 0.30);
+        background-image: linear-gradient(0deg, rgba(0.50, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.50) 100%),url(../static/css/img/login.jpeg);
+
+        justify-content: center;
+        align-items: center;
+        width: 390;
+         height: 100%;
+         background-size:cover;
+         background-attachment: fixed;
+        position: relative;
+        font-family: "Javanese Text-Regular", Helvetica;
+  font-weight: 400;
+  color: #d48e27;
+  font-size: 20px;
+  }
+  .property-login{
+  }
+  .form-group{
+  margin-top: 18px;
+  }
+  .form-group label
+  {
+  margin-left: 42px;
+  color: #D48E27;
+
+
+  }
+  .form-group input{
+     width : 300px;
+     margin-left: 42px;
+     color: '#D48E27'
+
+  }
+  .form-group button {
+
+       background: linear-gradient(180deg, rgba(212, 142, 39, 0.71) 76%, #D48E27 100%);
+  }
+  .log{
+   margin-left: 42px;
+  color: white;
+  margin-top:-30px;
+  background: linear-gradient(180deg, rgba(212, 142, 39, 0.71) 76%, #D48E27 100%);
+  }
+  .property-login {
+
+  background-color: white;
+  height: 520px;
+  position: fixed;
+  left:35%;
+  width: 390px;
+  border-radius: 10px ;
+  box-shadow: 4px 4px 4px #0000004c;
+  background:linear-gradient(
+    180deg,
+    rgb(232.9, 216.25, 200.88) 0%,
+    rgb(253.09, 249.8, 246.76) 86.9%,
+    rgba(248.84, 233.2, 218.77,10) 100%
+  );}
+<!--  background-color: rgba(255, 255, 255, 1);-->
+  background: linear-gradient(
+    180deg,
+    rgb(232.9, 216.25, 200.88) 0%,
+    rgb(253.09, 249.8, 246.76) 100%,
+    rgba(248.84, 233.2, 218.77,10) 100%
+  );
+
+  .text{
+  padding-top: 50px;
+  color: #D48E27;
+  }
+ .property-login .span {
+  padding-top : 14px;
+  color: #000000;
+}
+h3{
+ padding:10px;
+}
+
+
+
+</style>
+
+<div class="property-login">
+<form method="POST">
+  <h3 align="center" class="text">Sign Up</h3>
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      name="email"
+      placeholder="Enter email"
+    />
+  </div>
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="firstName"
+      name="firstName"
+      placeholder="Enter first name"
+    />
+  </div>
+  <div class="form-group">
+    <label for="password1">Password</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password1"
+      name="password1"
+      placeholder="Enter password"
+    />
+  </div>
+  <div class="form-group">
+    <label for="password2">Password (Confirm)</label>
+    <input
+      type="password"
+      class="form-control"
+      id="password2"
+      name="password2"
+      placeholder="Confirm password"
+    />
+  </div>
+  <br />
+  <button type="submit" class="btn log">Submit</button>
+
+</form>
+   </div>
+{% endblock %}

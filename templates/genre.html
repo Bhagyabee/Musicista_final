@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Genre Prediction</title>
+     <link rel="stylesheet" href="/static/css/genre.css" />
+</head>
+<body>
+<!--    <h1>Music Genre Prediction</h1>-->
+<!--    <form id="uploadForm" enctype="multipart/form-data">-->
+<!--        <input type="file" id="fileInput" accept=".wav, .mp3" required>-->
+<!--        <button type="button" onclick="predictGenre()">Predict Genre</button>-->
+<!--    </form>-->
+
+
+    <div class="AI-recommendation">
+      <div class="div">
+        <footer class="footer">
+          <div class="text-wrapper">Musicista</div>
+          <div class="text-wrapper-2">Connect With Us</div>
+          <div class="text-wrapper-3">Home</div>
+          <div class="text-wrapper-4">Bookings</div>
+          <div class="text-wrapper-5">Contact</div>
+          <div class="text-wrapper-6">Artists</div>
+          <img class="line" src="/static/img/line-4.svg" />
+          <img class="img" src="/static/img/line-4.svg" />
+          <img class="line-2" src="/static/img/line-4.svg" />
+          <img class="line-3" src="/static/img/line-4.svg" />
+          <img class="social-media" src="/static/img/line-4.svg" />
+          <p class="musicista-all">
+            <span class="span">Musicista © </span>
+            <span class="text-wrapper-7">2023 </span>
+            <span class="span"> | All rights Reserved</span>
+          </p>
+          <div class="text-wrapper-8">Privacy Policy</div>
+          <div class="text-wrapper-9">Cookie Policy</div>
+          <div class="text-wrapper-10">Terms and Conditions</div>
+          <p class="toll-no-xxxxxx">Toll No: +91-40-xxxxxx<br />Toll Free No: 1-800-xxxxxxx</p>
+          <div class="text-wrapper-11">musicistasup@gmail,com</div>
+        </footer>
+        <div class="overlap">
+          <div class="artist-page">
+            <div class="nav-bar">
+              <div class="navbar">
+
+                  <a class="nav-item nav-link text-wrapper-12 " id="home" href="/landing">Home</a>
+
+          <a class=" text-wrapper-12" id="artist" href="/artists">Artists</a>
+          <a class=" text-wrapper-12" id="contact" href="/landing">Contact</a>
+          <a class=" text-wrapper-12" id="about-us" href="/landing">About Us</a>
+                  <a class="text-wrapper-12" id="book" href="/book">Book-Now</a>
+
+<!--          <a class="nav-item nav-link text-wrapper-4" id="book" href="/book">Book-Now</a>-->
+           <a class=" text-wrapper-12" id="logout" href="/logout">Logout</a>
+              </div>
+              <div class="text-wrapper-14">Musicista</div>
+              <img class="ellipse" src="/static/img/Ellipse 1.svg" />
+              <img class="icon-search-normal" src="/static/css/img/🦆 icon _search normal 1_.svg" />
+            </div>
+            <div class="group">
+                 <form id="uploadForm" enctype="multipart/form-data">
+              <div class="overlap-group">
+                <div class="overlap-group-wrapper">
+                  <div class="overlap-group-2">
+
+                        <p class="p" id="somePTag">Upload your files here</p>
+                      <span class="p"  id="fileInputLabel" ></span>
+                    <div class="rectangle" ><input type="file" id="fileInput" accept=".wav, .mp3" required style="padding-top: 21px; padding-left: 18px"  onchange="displayFileName()"></div>
+                 <div id="fileNameDisplay"></div>
+                  </div>
+                </div>
+<!--                <img class="vector" src="img/vector-94.svg" />-->
+                  <div class="frame"><label for="fileInput" class="custom-button">Choose File</label><div class="text-wrapper-3"></div></div>
+
+              </div>
+            </div>
+
+            <p class="discover-top">Discover Top Musicians <br />with Smart AI Search</p>
+          </div>
+            <button type="button" onclick="predictGenre()">
+          <div class="overlap-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-16">GENRE</div></div>
+          </div>
+                </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    function displayFileName() {
+    const fileInput = document.getElementById('fileInput');
+    const fileNameDisplay = document.getElementById('fileNameDisplay');
+
+    // Check if a file is selected
+    if (fileInput.files.length > 0) {
+      const fileName = fileInput.files[0].name;
+      fileNameDisplay.textContent = `Selected File: ${fileName}`;
+      fileNameDisplay.style.color = 'white';
+
+       somePTag.style.display = 'none';
+
+    } else {
+      // If no file is selected, clear the display
+      fileNameDisplay.textContent = '';
+    }
+  }
+        async function predictGenre() {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+
+            const formData = new FormData();
+            formData.append('file', file);
+
+            try {
+                const response = await fetch('/predict_genre', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.error) {
+        // Handle errors, log the error, or update the UI as needed
+        console.error('Error:', result.error);
+    } else {
+        // Redirect to the prediction result page with genre and recommended artists
+        window.location.href = result.redirect_url;
+    }
+            } catch (error) {
+               console.error('Error:', error.message);
+            }
+        }
+    </script>
+</body>
+</html>

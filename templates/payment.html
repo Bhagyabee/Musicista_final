@@ -1,0 +1,44 @@
+{% extends "base.html" %} {% block title %}Artist{% endblock %} {% block
+content %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+    <link rel="stylesheet" href="../static/css/styleguidebase.css" />
+    <style>
+
+  body{
+  background: light-gray 50% / cover no-repeat ;
+  background-image: linear-gradient(0deg, rgba(0.50, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.50) 100%),url(../static/css/img/artistbackground.jpeg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: var(--collection-1-bg-primary);
+  }
+</style>
+ <div class="jumbotron">
+        <h1 class="display-3">Payment</h1>
+        <p class="lead">Book the Artist for only Rs.7999.</p>
+        <a href="#" id="buy_now_btn" class="btn btn-primary">Pay Now</a>
+      </div>
+
+      <footer class="footer">
+        <p>&copy; Store 2017</p>
+      </footer>
+      <script src="https://js.stripe.com/v3/"></script>
+
+      <script>
+        const checkout_public_key = '{{checkout_public_key}}';
+        const checkout_session_id = '{{checkout_session_id}}';
+      </script>
+
+      <script src="{{ url_for('static', filename='script-no-ajax.js') }}"></script>
+
+  </body>
+
+
+</html>
+{% endblock %}

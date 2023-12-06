@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/static/css/globals.css" />
+    <link rel="stylesheet" href="/static/css/resultstyleguide.css" />
+    <link rel="stylesheet" href="/static/css/result_style.css" />
+    <title>Prediction Result</title>
+</head>
+<body>
+
+
+
+
+
+    <div class="AI-recommendation">
+      <div class="div">
+        <footer class="footer">
+          <div class="text-wrapper">Musicista</div>
+          <div class="text-wrapper-2">Connect With Us</div>
+          <div class="text-wrapper-3">Home</div>
+          <div class="text-wrapper-4">Bookings</div>
+          <div class="text-wrapper-5">Contact</div>
+          <div class="text-wrapper-6">Artists</div>
+
+            <img class="line" src="/static/img/line-4.svg" />
+          <img class="img" src="/static/img/line-4.svg" />
+          <img class="line-2" src="/static/img/line-4.svg" />
+          <img class="line-3" src="/static/img/line-4.svg" />
+          <img class="social-media" src="/static/img/line-4.svg" />
+          <p class="musicista-all">
+            <span class="span">Musicista © </span>
+            <span class="text-wrapper-7">2023 </span>
+            <span class="span"> | All rights Reserved</span>
+          </p>
+          <div class="text-wrapper-8">Privacy Policy</div>
+          <div class="text-wrapper-9">Cookie Policy</div>
+          <div class="text-wrapper-10">Terms and Conditions</div>
+          <p class="toll-no-xxxxxx">Toll No: +91-40-xxxxxx<br />Toll Free No: 1-800-xxxxxxx</p>
+          <div class="text-wrapper-11">musicistasup@gmail.com</div>
+        </footer>
+        <div class="artist-page">
+          <div class="nav-bar">
+            <div class="navbar">
+<!--              <div class="text-wrapper-12">Home</div>-->
+<!--              <div class="text-wrapper-12">Artists</div>-->
+<!--              <div class="text-wrapper-13">About Us</div>-->
+<!--              <div class="text-wrapper-13">Contact</div>-->
+                <a class=" text-wrapper-12 " id="home" href="/landing">Home</a>
+
+          <a class=" text-wrapper-12" id="artist" href="/artists">Artists</a>
+          <a class="text-wrapper-12" id="contact" href="/landing">Contact</a>
+                <a class="text-wrapper-12" id="book" href="/book">Book-Now</a>
+          <a class="text-wrapper-13" id="about-us" href="/landing">About Us</a>
+
+<!--          <a class="nav-item nav-link text-wrapper-4" id="book" href="/book">Book-Now</a>-->
+           <a class="text-wrapper-13" id="logout" href="/logout">Logout</a>
+            </div>
+            <div class="text-wrapper-14">Musicista</div>
+            <img class="ellipse" src="/static/img/Ellipse 1.svg" />
+
+               <a href="/genre"><img class="icon-search-normal" src="/static/css/img/🦆 icon _search normal 1_.svg" /></a>
+          </div>
+          <div class="frame" id="artistContainer">
+<!--            <div class="group">-->
+<!--              <div class="overlap-group">-->
+<!--                <img class="rectangle" src="img/rectangle-13-5.svg" />-->
+<!--                <div class="text-wrapper-15">Electric Eclipse</div>-->
+<!--                <p class="p">Electric melodies that ignite your soul and move your feet.</p>-->
+<!--                <div class="text-wrapper-16"></div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="group">-->
+<!--              <div class="overlap-group">-->
+<!--                <img class="rectangle" src="img/rectangle-13-2.svg" />-->
+<!--                <div class="text-wrapper-17">Midnight Mirage</div>-->
+<!--                <p class="p">Electric melodies that ignite your soul and move your feet.</p>-->
+<!--                <div class="text-wrapper-16"></div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="overlap-wrapper">-->
+<!--              <div class="overlap-group">-->
+<!--                <img class="rectangle" src="img/image.svg" />-->
+<!--                <div class="text-wrapper-18">Echoes of Euphoria</div>-->
+<!--                <div class="text-wrapper-16"></div>-->
+<!--                <p class="p">Electric melodies that ignite your soul and move your feet.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="group">-->
+<!--              <div class="overlap-group">-->
+<!--                <img class="rectangle" src="img/rectangle-13-3.svg" />-->
+<!--                <div class="text-wrapper-15">Lunar Pulse</div>-->
+<!--                <p class="p">Electric melodies that ignite your soul and move your feet.</p>-->
+<!--                <div class="text-wrapper-16"></div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="group">-->
+<!--              <div class="overlap-group">-->
+<!--                <img class="rectangle" src="img/rectangle-13-4.svg" />-->
+<!--                <div class="text-wrapper-17">Whiskey Tango</div>-->
+<!--                <p class="p">Electric melodies that ignite your soul and move your feet.</p>-->
+<!--                <div class="text-wrapper-16"></div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--            <div class="overlap-wrapper">-->
+<!--              <div class="overlap-group">-->
+<!--                <img class="rectangle" src="img/rectangle-13.svg" />-->
+<!--                <div class="text-wrapper-17">Radiant Nebula</div>-->
+<!--                <div class="text-wrapper-16"></div>-->
+<!--                <p class="p">Electric melodies that ignite your soul and move your feet.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+          </div>
+          <div class="text-wrapper-19">Recommended For Predicted Genre : {{ response_data.predicted_genre }}</div>
+<!--          <div class="overlap-group-wrapper">-->
+<!--            <div class="overlap">-->
+<!--              <div class="div-wrapper">-->
+<!--                <div class="overlap-group-2">-->
+<!--                  <div class="text-wrapper-20">Upload another music file</div>-->
+<!--                  <div class="rectangle-2"></div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <img class="vector" src="img/vector-94.svg" />-->
+<!--              <div class="frame-2"><div class="text-wrapper-21">Browse File</div></div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="group-2">-->
+<!--            <div class="overlap-2"><div class="text-wrapper-22">Predicted Genre: {{ response_data.predicted_genre }}</div></div>-->
+<!--          </div>-->
+        </div>
+      </div>
+    </div>
+
+
+<!--    <h1>Prediction Result</h1>-->
+
+<!--    <p>Predicted Genre: {{ response_data.predicted_genre }}</p>-->
+
+<!--    <h2>Recommended Artists:</h2>-->
+<!--    <ul>-->
+<!--        {% for artist in response_data.recommended_artists %}-->
+<!--            <li>{{ artist }}</li>-->
+<!--        {% endfor %}-->
+<!--    </ul>-->
+     <script>
+      // Get the container where artist blocks will be added
+      const artistContainer = document.getElementById('artistContainer');
+
+      // Retrieve recommended artists based on the predicted genre from the server response
+      const response = JSON.parse('{{ response_data | tojson | safe }}');
+      const predictedGenre = response.predicted_genre;
+
+      // Retrieve artist information from the genre mapping
+      const genreMapping = {
+        'pop': [
+          { name: 'Midnight Mirage', description: 'Boundless creativity knows no limits,Their art is a visual dialogue, sparking conversations .', image: '/static/css/img/rectangle-13-29.png' },
+          { name: 'Electric Eclipse', description: 'Narrative Whisperer: With every stroke of the guitar o, this artist weaves intricate stories onto their audience', image: '/static/css/img/rectangle-13-28.png' },
+           { name: 'Echoes of Euphoria', description: 'Expressive Innovator: Bold, daring, and unapologetically avant-garde, this artist challenges the norms and pushes the boundaries of conventional artistry. ', image: '/static/css/img/rectangle-13-18.png' },
+            { name: 'Lunar Pulse', description: 'Melodic Storyteller: This musician crafts lyrical tapestries that weave emotions into each note, transforming personal experiences into universally relatable melodies.   ', image: '/static/css/img/rectangle-13-20.png' },
+<!--             { name: 'Artist2', description: 'Eclectic Visionary: Versatile and multifaceted, this artist's portfolio spans a kaleidoscope of styles, mediums, and themes.', image: '/static/css/img/rectangle-13-19.png' }-->
+          // Add more artists as needed
+        ],
+        'rock': [
+         { name: 'Radiant Nebula', description: 'Expressive Innovator: Bold, daring, and unapologetically avant-garde, this artist challenges the norms and pushes the boundaries of conventional artistry.', image: '/static/css/img/rectangle-13-29.png' },
+          { name: 'Midnight Mirage', description: 'Boundless creativity knows no limits,Their art is a visual dialogue, sparking conversations .', image: '/static/css/img/rectangle-13-28.png' },
+           { name: 'Orion Fox', description: 'Narrative Whisperer: With every stroke of the guitar o, this artist weaves intricate stories onto their audience', image: '/static/css/img/rectangle-13-18.png' },
+            { name: 'Juniper Grace', description: 'Melodic Storyteller: This musician crafts lyrical tapestries that weave emotions into each note, transforming personal experiences into universally relatable melodies. ', image: '/static/css/img/rectangle-13-20.png' },
+             { name: 'Andrew William', description: 'Sonic Alchemist: Like a wizard of sound, this artist conjures sonic spells that defy conventional genres.', image: '/static/css/img/rectangle-13-19.png' }
+          // Add more artists as needed
+        ],
+        'hip-hop': [
+         { name: 'Josh Adwin', description: 'Narrative Whisperer: With every stroke of the guitar o, this artist weaves intricate stories onto their audience', image: '/static/css/img/rectangle-13-29.png' },
+          { name: 'Pulse', description: 'Boundless creativity knows no limits,Their art is a visual dialogue, sparking conversations .', image: '/static/css/img/rectangle-13-28.png' },
+           { name: 'Jasper Blake', description: 'Expressive Innovator: Bold, daring, and unapologetically avant-garde, this artist challenges the norms and pushes the boundaries of conventional artistry.', image: '/static/css/img/rectangle-13-18.png' },
+            { name: 'Indigo Moon', description: 'Sonic Alchemist: Like a wizard of sound, this artist conjures sonic spells that defy conventional genres.', image: '/static/css/img/rectangle-13-20.png' },
+             { name: 'Radiant Nebula', description: 'Melodic Storyteller: This musician crafts lyrical tapestries that weave emotions into each note, transforming personal experiences into universally relatable melodies. ', image: '/static/css/img/rectangle-13-19.png' }
+        ],
+
+        // Add more genres and artists as needed
+         'country': [
+         { name: 'Acoustic Band', description: 'Boundless creativity knows no limits,Their art is a visual dialogue, sparking conversations .', image: '/static/css/img/rectangle-13-29.png' },
+          { name: 'Radiant Duets', description: 'Narrative Whisperer: With every stroke of the guitar o, this artist weaves intricate stories onto their audience', image: '/static/css/img/rectangle-13-28.png' },
+           { name: 'Jasper Blake', description: 'Melodic Storyteller: This musician crafts lyrical tapestries that weave emotions into each note, transforming personal experiences into universally relatable melodies. ', image: '/static/css/img/rectangle-13-18.png' },
+            { name: 'Moontlit Melodies', description: 'Expressive Innovator: Bold, daring, and unapologetically avant-garde, this artist challenges the norms and pushes the boundaries of conventional artistry.', image: '/static/css/img/rectangle-13-20.png' },
+             { name: 'Harmony Junction', description: 'Sonic Alchemist: Like a wizard of sound, this artist conjures sonic spells that defy conventional genres.', image: '/static/css/img/rectangle-13-19.png' }
+        ],
+         'disco': [
+         { name: 'Enchanted Echoes', description: 'Boundless creativity knows no limits,Their art is a visual dialogue, sparking conversations .', image: '/static/css/img/rectangle-13-29.png' },
+          { name: 'Orion Fox', description: 'Expressive Innovator: Bold, daring, and unapologetically avant-garde, this artist challenges the norms and pushes the boundaries of conventional artistry.', image: '/static/css/img/rectangle-13-28.png' },
+           { name: 'Serenade duo', description: 'Narrative Whisperer: With every stroke of the guitar o, this artist weaves intricate stories onto their audience', image: '/static/css/img/rectangle-13-18.png' },
+            { name: 'Echoes of Euphoria', description: 'Passionate Virtuoso: With fingers dancing across strings or keys, this musician embodies virtuosity. ', image: '/static/css/img/rectangle-13-20.png' },
+             { name: 'Twin Notes', description: 'Sonic Alchemist: Like a wizard of sound, this artist conjures sonic spells that defy conventional genres.', image: '/static/css/img/rectangle-13-19.png' }
+        ],
+         'jazz': [
+         { name: 'Jasper Blake', description: 'Narrative Whisperer: With every stroke of the guitar o, this artist weaves intricate stories onto their audience', image: '/static/css/img/rectangle-13-29.png' },
+          { name: 'Harmony & Echo', description: 'Boundless creativity knows no limits,Their art is a visual dialogue, sparking conversations .', image: '/static/css/img/rectangle-13-28.png' },
+           { name: 'Sasha', description: 'Melodic Storyteller: This musician crafts lyrical tapestries that weave emotions into each note, transforming personal experiences into universally relatable melodies. ', image: '/static/css/img/rectangle-13-18.png' },
+            { name: 'Juniper Grace', description: 'Expressive Innovator: Bold, daring, and unapologetically avant-garde, this artist challenges the norms and pushes the boundaries of conventional artistry.', image: '/static/css/img/rectangle-13-20.png' },
+             { name: 'Radiant Duet', description: 'Sonic Alchemist: Like a wizard of sound, this artist conjures sonic spells that defy conventional genres.', image: '/static/css/img/rectangle-13-19.png' }
+        ],
+         'metal': [
+         { name: 'Willow Summers', description: 'Expressive Innovator: Bold, daring, and unapologetically avant-garde, this artist challenges the norms and pushes the boundaries of conventional artistry.', image: '/static/css/img/rectangle-13-29.png' },
+          { name: 'Josh Adwin', description: 'Description for Artist2', image: '/static/css/img/rectangle-13-28.png' },
+           { name: 'Enchanted Echoes', description: 'Melodic Storyteller: This musician crafts lyrical tapestries that weave emotions into each note, transforming personal experiences into universally relatable melodies. ', image: '/static/css/img/rectangle-13-18.png' },
+            { name: 'Indigo Moon', description: 'Narrative Whisperer: With every stroke of the guitar o, this artist weaves intricate stories onto their audience', image: '/static/css/img/rectangle-13-20.png' },
+             { name: 'Jasper Blake', description: 'Sonic Alchemist: Like a wizard of sound, this artist conjures sonic spells that defy conventional genres.', image: '/static/css/img/rectangle-13-19.png' }
+        ],
+         'pop': [
+         { name: 'Harmony Junction', description: 'Melodic Storyteller: This musician crafts lyrical tapestries that weave emotions into each note, transforming personal experiences into universally relatable melodies. ', image: '/static/css/img/rectangle-13-29.png' },
+          { name: 'Acoustic Band', description: 'Narrative Whisperer: With every stroke of the guitar o, this artist weaves intricate stories onto their audience', image: '/static/css/img/rectangle-13-28.png' },
+           { name: 'Harmony and Echo', description: 'Boundless creativity knows no limits,Their art is a visual dialogue, sparking conversations .', image: '/static/css/img/rectangle-13-18.png' },
+            { name: 'Midnight Mirage', description: 'Expressive Innovator: Bold, daring, and unapologetically avant-garde, this artist challenges the norms and pushes the boundaries of conventional artistry.', image: '/static/css/img/rectangle-13-20.png' },
+             { name: 'Radiant Duet', description: 'Sonic Alchemist: Like a wizard of sound, this artist conjures sonic spells that defy conventional genres.', image: '/static/css/img/rectangle-13-19.png' }
+        ],
+         'reggae': [
+         { name: 'Enchanted Echoes', description: 'Narrative Whisperer: With every stroke of the guitar o, this artist weaves intricate stories onto their audience', image: '/static/css/img/rectangle-13-29.png' },
+          { name: 'Midnight Mirage', description: 'Melodic Storyteller: This musician crafts lyrical tapestries that weave emotions into each note, transforming personal experiences into universally relatable melodies. ', image: '/static/css/img/rectangle-13-28.png' },
+           { name: 'Indigo Moon', description: 'Expressive Innovator: Bold, daring, and unapologetically avant-garde, this artist challenges the norms and pushes the boundaries of conventional artistry.', image: '/static/css/img/rectangle-13-18.png' },
+            { name: 'Orion Fox', description: 'Boundless creativity knows no limits,Their art is a visual dialogue, sparking conversations .', image: '/static/css/img/rectangle-13-20.png' },
+             { name: 'Willow Summers', description: 'Sonic Alchemist: Like a wizard of sound, this artist conjures sonic spells that defy conventional genres.', image: '/static/css/img/rectangle-13-19.png' }
+        ],
+         'rock': [
+         { name: 'Andrew Williams', description: 'Narrative Whisperer: With every stroke of the guitar o, this artist weaves intricate stories onto their audience', image: '/static/css/img/rectangle-13-29.png' },
+          { name: 'Josh Adwin', description: 'Melodic Storyteller: This musician crafts lyrical tapestries that weave emotions into each note, transforming personal experiences into universally relatable melodies. ', image: '/static/css/img/rectangle-13-28.png' },
+           { name: 'Electric eclipse', description: 'Expressive Innovator: Bold, daring, and unapologetically avant-garde, this artist challenges the norms and pushes the boundaries of conventional artistry.', image: '/static/css/img/rectangle-13-18.png' },
+            { name: 'Sasha', description: 'Boundless creativity knows no limits,Their art is a visual dialogue, sparking conversations .', image: '/static/css/img/rectangle-13-20.png' },
+             { name: 'Pulse', description: 'Sonic Alchemist: Like a wizard of sound, this artist conjures sonic spells that defy conventional genres.', image: '/static/css/img/rectangle-13-19.png' }
+        ],
+         'blues': [
+         { name: 'Pulse', description: 'Expressive Innovator: Bold, daring, and unapologetically avant-garde, this artist challenges the norms and pushes the boundaries of conventional artistry.', image: '/static/css/img/rectangle-13-29.png' },
+          { name: 'Sasha', description: 'Melodic Storyteller: This musician crafts lyrical tapestries that weave emotions into each note, transforming personal experiences into universally relatable melodies. ', image: '/static/css/img/rectangle-13-28.png' },
+           { name: 'Juniper Grace', description: 'Narrative Whisperer: With every stroke of the guitar o, this artist weaves intricate stories onto their audience', image: '/static/css/img/rectangle-13-18.png' },
+            { name: 'Jasper Blake', description: 'Boundless creativity knows no limits,Their art is a visual dialogue, sparking conversations .', image: '/static/css/img/rectangle-13-20.png' },
+             { name: 'Indigo Moon', description: 'Sonic Alchemist: Like a wizard of sound, this artist conjures sonic spells that defy conventional genres.', image: '/static/css/img/rectangle-13-19.png' }
+        ],
+         'classical': [
+         { name: 'Whiskey Tango', description: 'Narrative Whisperer: With every stroke of the guitar o, this artist weaves intricate stories onto their audience', image: '/static/css/img/rectangle-13-29.png' },
+          { name: 'Juniper Grace', description: 'Expressive Innovator: Bold, daring, and unapologetically avant-garde, this artist challenges the norms and pushes the boundaries of conventional artistry.', image: '/static/css/img/rectangle-13-28.png' },
+           { name: 'Jasper Blake', description: 'Boundless creativity knows no limits,Their art is a visual dialogue, sparking conversations .', image: '/static/css/img/rectangle-13-18.png' },
+            { name: 'Indigo Moon', description: 'Sonic Alchemist: Like a wizard of sound, this artist conjures sonic spells that defy conventional genres.', image: '/static/css/img/rectangle-13-20.png' },
+             { name: 'Sasha', description: 'Melodic Storyteller: This musician crafts lyrical tapestries that weave emotions into each note, transforming personal experiences into universally relatable melodies. ', image: '/static/css/img/rectangle-13-19.png' }
+        ]
+      };
+
+      // Check if the predicted genre exists in the mapping
+      if (predictedGenre.toLowerCase() in genreMapping) {
+        // Retrieve recommended artists for the predicted genre
+        const recommendedArtists = genreMapping[predictedGenre.toLowerCase()];
+
+        // Iterate through recommended artists and create blocks for each
+        recommendedArtists.forEach(artist => {
+
+           const artistLink = document.createElement('a');
+           artistLink.href = '/book-now'; // Replace '/booking-page-url' with your actual booking page URL
+           artistLink.classList.add('artist-link');
+
+          const artistBlock = document.createElement('div');
+          artistBlock.classList.add('group'); // Add the appropriate class for styling
+          artistBlock.innerHTML = `
+            <div class="overlap-group">
+              <img class="rectangle" src="${artist.image}" />
+              <div class="text-wrapper-18">${artist.name}</div>
+              <p class="p">${artist.description}</p>
+            </div>
+          `;
+          artistContainer.appendChild(artistBlock);
+           artistContainer.appendChild(artistLink);
+        });
+      } else {
+        // Handle the case when no recommendations are available for the predicted genre
+        const noRecommendationsBlock = document.createElement('div');
+        noRecommendationsBlock.innerHTML = `<p>No recommendations available for ${predictedGenre}.</p>`;
+        artistContainer.appendChild(noRecommendationsBlock);
+      }
+    </script>
+  </body>
+</html>
