@@ -1,0 +1,235 @@
+{
+  "intents" : [
+    {
+      "tag": "greetings",
+      "patterns": ["hi","hello","hey","heya","good day","greetings","whats up","howdy","yo yo","hiiiii","hii","namaste"],
+      "responses" : ["Hi! How can I assist you today?", "Hey! How can I help you?", "Hello! What can I do for you?", "Good day! How may I assist you?", "Greetings! What brings you here?", "Howdy! What can I do for you today?", "Not much! How can I assist you?", "Hello! How can I be of service?", "Greetings! How can I help you today?", "Hi! What can I do for you?"]
+    },
+    {
+       "tag": "pricing_info",
+      "patterns": ["How much does it cost to book an artist?", "What are the pricing options for artists?","artist price","price","price of artist"],
+      "responses": ["Pricing for booking an artist depends on various factors such as the artist's popularity, event type, and location.You can check our artist page for the price of the artist. Please contact us for specific pricing details."]
+    },
+     {
+      "tag": "contact_info",
+      "patterns": ["How can I contact you?", "What is your contact information?", "Where can I reach out to book an artist?","contact","contact you","connect"],
+      "responses": ["You can contact us through our 'Contact Us' page on our website. We're also available via email at [email_address] and by phone at [phone_number]."]
+    },
+    {
+      "tag": "thank_you",
+      "patterns": ["Thank you!", "Thanks a lot!", "Much appreciated"],
+      "responses": ["You're welcome! If you have any more questions, feel free to ask."]
+    },
+     {
+      "tag": "booking_info",
+      "patterns": ["artist book", "book artist","How can I book an artist?", "how to book solo artist"," how to book duet artist"," ","Tell me about the booking process", "What's the procedure for booking an artist?","book","book artist","book a artist","procedure to book artist","procedure for booking artist","procedure for booking an artist"],
+      "responses": ["To book an artist, please visit our 'BOOK-NOW' page and fill out the details of the artist or  contact us directly through our contact form."]
+    }, {
+      "tag": "payment_process",
+      "patterns": ["How do I make a payment?", "What are the payment options?", "Can I pay online?","payment","pay"],
+      "responses": ["We offer convenient online payment options. Once you confirm the booking, we'll provide you with the details."]
+    },
+     {
+      "tag": "confirmation",
+      "patterns": ["How do I confirm a booking?", "What's the process for confirming a booking?","confirm Booking"],
+      "responses": ["To confirm a booking, we'll need some details from you. We'll guide you through the process step by step."]
+    },
+    {
+      "tag": "cancel_booking",
+      "patterns": ["How can I cancel a booking?", "What's the cancellation policy?","cancel","booking cancel","cancel booking"],
+      "responses": ["If you need to cancel a booking, please contact us as soon as possible. We'll provide you with the necessary steps."]
+    },
+    {
+      "tag": "payment_process",
+      "patterns": ["How do I make a payment?", "What are the payment options?", "Can I pay online?","payment"],
+      "responses": ["We offer convenient online payment options. Once you confirm the booking, we'll provide you with the details."]
+    },
+    {
+      "tag": "event_type",
+      "patterns": ["I'm hosting a [event_type] event", "I need an artist for a [event_type] event"],
+      "responses": ["That sounds exciting! We have artists who specialize in [event_type] events. How can we assist you further?"]
+    },
+    {
+      "tag": "browse_artists",
+      "patterns": ["Show me available artists", "List of artists", "Who are the artists available?","Artist List","Available Artists","who are the artists","names of artist","name artist","artist"],
+      "responses": ["Sure! Here are some of our talented artists: Indigo Moon  ,  Jasper Blake , Orion Fox ,Juniper Grace, Willow Summers , Pulse , Andrew William , Sasha , Josh Adwin , Electric Eclipse , Midnight Mirage ,  Echoes of Euphoria ,Whiskey Tango , Radiant Nebula . ","We have variety of artist some of them are:Midnight Mirage ,  Echoes of Euphoria ,Whiskey Tango , Radiant Nebula . Moreover you can go to artist page and select your favourite artist."]
+    },
+    {
+      "tag": "booking_requirements",
+      "patterns": [
+        "What information do you need to book an artist?",
+        "What details should I provide for booking?",
+        "Do you have specific booking requirements?",
+        "book","book"
+      ],
+      "responses": [
+        "To book an artist, we'll need details like event date, venue location, and any specific requests. We'll guide you through the process.",
+        "When booking an artist, we'll require information about the event, venue, and any special requests. We'll assist you in providing these details.",
+        "For a smooth booking process, we'll need event details, venue information, and any specific requests you may have. We're here to help you with this."
+      ]
+
+    },{
+      "tag": "faq_booking_process",
+      "patterns": [
+        "How do I book an artist?",
+        "What is the process for booking?",
+        "Can you guide me through the booking process?","booking process","process of booking","booking","book"
+      ],
+      "responses": [
+        "Booking an artist is easy! You can visit our website and go to the 'Booking' section for step-by-step instructions.",
+        "To book an artist, you can start by browsing our available artists and then follow the instructions on our website.",
+        "Sure! To book an artist, please follow the steps outlined in the 'Booking' section of our website."
+      ]
+    }, {
+      "tag": "contact_preferences",
+      "patterns": [
+        "How can I reach out to you?",
+        "What are the contact options?",
+        "Do you prefer contact through email or phone?","contact you"
+      ],
+      "responses": [
+        "You can contact us through our website's 'Contact Us' page, or you can email us at [email_address]. We're also available by phone at [phone_number].",
+        "You have multiple options! You can reach out to us through our website, email us at [email_address], or call us at [phone_number]."
+      ]
+    },{
+      "tag": "pricing_negotiation",
+      "patterns": [
+        "Can I negotiate the pricing?","price negotiation",
+        "Is there room for price negotiation?",
+        "Are the prices flexible?"
+      ],
+      "responses": [
+        "While we aim to offer competitive prices, we do consider special circumstances. Please contact us to discuss further.",
+        "We understand budget constraints and can sometimes accommodate special requests. Feel free to reach out to us.",
+        "While our prices are generally fixed, we're open to discussing options based on specific requirements. Please contact us for more information."
+      ]
+    },
+    {
+      "tag": "booking_requirements",
+      "patterns": [
+        "What information do you need to book an artist?",
+        "What details should I provide for booking?",
+        "Do you have specific booking requirements?","booking information to be provided"
+      ],
+      "responses": [
+        "To book an artist, we'll need details like event date, venue location, and any specific requests. We'll guide you through the process.",
+        "When booking an artist, we'll require information about the event, venue, and any special requests. We'll assist you in providing these details.",
+        "For a smooth booking process, we'll need event details, venue information, and any specific requests you may have. We're here to help you with this."
+      ]
+    },{
+      "tag": "artist_availability_confirmation",
+      "patterns": [
+        "Is [artist_name] available on [date] for [event_type]?",
+        "Can I confirm [artist_name] for [date]?",
+        "I'd like to book [artist_name] for [date].",
+        " is [artist_name] available for [data]"
+      ],
+      "responses": [
+        "Let me check [artist_name]'s availability for [date]... Yes, [artist_name] is available for [event_type] on [date].",
+        "Great choice! [artist_name] is indeed available on [date] for [event_type].",
+        "You're in luck! [artist_name] is available for [event_type] on [date]. We can proceed with the booking process."
+      ]
+    },{
+      "tag": "thank_you",
+      "patterns": [
+        "Thank you!",
+        "Thanks a lot!",
+        "Much appreciated",
+        "Thank you for your help",
+        "Thanks for assisting me",
+        "I'm grateful for your assistance",
+        "Thank you so much!",
+        "I appreciate your help",
+        "You've been very helpful",
+        "Thanks a bunch!"
+      ],
+      "responses": [
+        "You're welcome! If you have any more questions, feel free to ask.",
+        "You're very welcome! If you need further assistance, don't hesitate to reach out.",
+        "You're welcome! It was my pleasure to help.",
+        "You're welcome! If there's anything else you'd like to know, just let me know.",
+        "You're welcome! If you have any more inquiries, feel free to ask.",
+        "I'm glad I could assist you! If you need anything else, feel free to reach out.",
+        "You're welcome! Don't hesitate to contact us if you have more questions in the future.",
+        "I'm happy to help! If there's anything else you'd like to know, feel free to ask.",
+        "You're very welcome! Should you have any more questions, feel free to ask.",
+        "You're welcome! Have a great day!"
+      ]
+    },{
+      "tag": "goodbye",
+      "patterns": ["Goodbye", "Farewell", "See you later", "Bye for now", "Take care"],
+      "responses": ["Goodbye! Have a great day!", "Farewell! If you need anything else, don't hesitate to ask.", "See you later! If you have more questions, feel free to return.", "Bye for now! Take care.", "Take care! If you ever need assistance again, don't hesitate to reach out."]
+    },
+    {
+      "tag": "grateful_goodbye",
+      "patterns": ["Thank you and goodbye", "I appreciate your help, goodbye", "Thanks for your assistance, goodbye"],
+      "responses": ["You're welcome! Goodbye and have a wonderful day!", "You're very welcome! If you need anything else, feel free to ask. Goodbye!", "I'm glad I could assist you. Goodbye and take care!"]
+    },
+    {
+      "tag": "come_back_soon",
+      "patterns": ["I'll be back later", "I'll return if I have more questions", "I'll visit again soon"],
+      "responses": ["Sounds great! We'll be here to assist you whenever you're ready. Have a fantastic day!", "We'll be here when you return. Feel free to reach out whenever you need help. Have a great day!"]
+    },
+    {
+      "tag": "unresolved_issue_goodbye",
+      "patterns": ["I still need help, goodbye", "I'll figure it out, thanks anyway", "I'll find a solution, goodbye"],
+      "responses": ["Alright, if you ever need further assistance, don't hesitate to reach out. Goodbye and take care!", "Understood. If you change your mind or need more help, feel free to come back. Goodbye!"]
+    }, {
+      "tag": "bot_info",
+      "patterns": [
+        "Who are you?",
+        "What is your name?",
+        "Tell me about yourself",
+        "What can you do?",
+        "What are your capabilities?",
+        "Are you a human or a bot?"
+      ],
+      "responses": [
+        "I am a chatbot designed to assist you with various tasks and answer your questions.",
+        "I'm a chatbot created by Musicista. My purpose is to help with tasks and provide information.",
+        "I'm an AI-powered chatbot here to assist you with your queries and tasks.",
+        "I'm MUSI, a language model trained by Musicista. I'm here to help you with information and tasks.",
+        "I am an AI-powered bot designed to provide information and assist with tasks.",
+        "I'm not a human, I'm a computer program designed to assist you with your questions and tasks."
+      ]
+    },
+    {
+      "tag": "bot_capabilities",
+      "patterns": [
+        "What can you do?",
+        "What are your skills?",
+        "What are you capable of?",
+        "How can you help me?",
+        "Tell me your abilities"
+      ],
+      "responses": [
+        "I can help you with a wide range of tasks, from answering questions to providing recommendations and more.",
+        "I'm capable of tasks like answering questions, generating text, providing information, and more.",
+        "I can assist with tasks like answering questions, providing information, generating text, and more.",
+        "I'm equipped to help you with a variety of tasks, including answering questions, offering suggestions, and more."
+      ]
+    },
+    {
+      "tag": "bot_origin",
+      "patterns": [
+        "Where do you come from?",
+        "Who created you?",
+        "Who developed you?",
+        "Who is your creator?"
+      ],
+      "responses": [
+        "I was developed by MUSICISTA, a leading Music Artist booking website",
+        "I was created by MUSICISTA, a leading Music Artist booking website for the benefit of humanity.",
+        "I was developed by MUSICISTA, a leading Music Artist booking website",
+        "I'm a creation of MUSICISTA, a leading Music Artist booking website"
+      ]
+    }
+  ]
+}
+
+
+
+
+
+
+
