@@ -1,0 +1,8 @@
+:root {
+  --collection-1-bg-primary: rgba(11, 11, 11, 1);
+  --collection-1-bg-rounded-blocks: rgba(0, 0, 0, 1);
+  --collection-1-bg-payment: rgba(23, 22, 22, 1);
+  --collection-1-text-color: rgba(255, 255, 255, 1);
+  --collection-1-text-secondary: rgba(166, 162, 162, 1);
+  --collection-1-strokes: rgba(212, 142, 39, 1);
+}

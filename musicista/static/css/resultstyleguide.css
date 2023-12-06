@@ -1,0 +1,41 @@
+:root {
+  --collection-1-bg-primary: rgba(11, 11, 11, 1);
+  --collection-1-bg-rounded-blocks: rgba(0, 0, 0, 1);
+  --collection-1-bg-payment: rgba(23, 22, 22, 1);
+  --collection-1-text-color: rgba(255, 255, 255, 1);
+  --collection-1-text-secondary: rgba(166, 162, 162, 1);
+  --collection-1-strokes: rgba(212, 142, 39, 1);
+  --collection-1-text-color-duplicate: rgba(255, 255, 255, 1);
+  --collection-1-strokes-duplicate: rgba(212, 142, 39, 1);
+  --collection-1-bg-primary-duplicate: rgba(11, 11, 11, 1);
+  --collection-1-text-ntext: rgba(242, 242, 242, 1);
+  --collection-1-text-secondary-duplicate: rgba(248, 241, 202, 1);
+}
+
+/*
+
+To enable a theme in your HTML, simply add one of the following data attributes to an HTML element, like so:
+
+<body data-collection-1-mode="mode-1">
+    <!-- the rest of your content -->
+</body>
+
+You can apply the theme on any DOM node, not just the `body`
+
+*/
+
+[data-collection-1-mode="mode-1"] {
+  --collection-1-text-ntext: rgba(242, 242, 242, 1);
+}
+
+[data-collection-1-mode="mode-2"] {
+  --collection-1-text-ntext: rgba(255, 255, 255, 1);
+}
+
+[data-collection-1-mode="mode-3"] {
+  --collection-1-text-ntext: rgba(255, 255, 255, 1);
+}
+
+[data-collection-1-mode="mode-4"] {
+  --collection-1-text-ntext: rgba(255, 255, 255, 1);
+}
